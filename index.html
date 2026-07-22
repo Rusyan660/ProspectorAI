@@ -417,6 +417,14 @@
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .hero h1 { font-size: 36px; }
   }
+    <link rel="stylesheet" href="css/dashboard.css">
+  <section>
+
+    <h1>Welcome to LeadPilot</h1>
+
+    <div id="dashboard-container"></div>
+
+</section>
 </style>
 </head>
 <body>
@@ -2967,6 +2975,28 @@ document.head.appendChild(style);
 // INIT
 // ============================================================
 showPage('landing');
+<script>
+
+fetch("dashboard.html")
+.then(response => response.text())
+.then(html => {
+
+    document
+    .getElementById("dashboard-container")
+    .innerHTML = html;
+
+
+    const script = document.createElement("script");
+    script.src = "js/dashboard.js";
+
+    document.body.appendChild(script);
+
+})
+
+.catch(error => {
+    console.log("Dashboard loading error:", error);
+});
+
 </script>
 </body>
 </html>
