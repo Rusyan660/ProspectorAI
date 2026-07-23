@@ -1,6 +1,6 @@
 /* =============================================================
-   LeadPilot Dashboard — dashboard.css
-   Design system inherits tokens from the main leadpilot.html.
+   ProspectorAI Dashboard — dashboard.css
+   Design system inherits tokens from the main ProspectorAI.html.
    This file adds all dashboard-specific, lead-management,
    AI scoring, email-generator, campaign, and settings styles.
    Future: import into Next.js as a CSS module or Tailwind layer.
